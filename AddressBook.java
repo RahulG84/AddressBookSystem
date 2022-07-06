@@ -34,4 +34,10 @@ public class AddressBook {
         contact.setEmail(email);
         System.out.println(contact);
     }
+    //Method for Contact Display
+    public void displayContact() {
+        String str = contact.getFirstName();
+        System.out.println("Contact of : " + str);
+    }
+
 }
