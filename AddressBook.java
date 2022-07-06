@@ -77,4 +77,36 @@ public class AddressBook {
             deleteContact();
         }
     }
+    // Function for operations of user's choice
+    public void getmenu() {
+        System.out.println("Menu of Address Book");
+        boolean check = false;
+        do {
+            System.out.println(
+                    "Enter your choice \n 1. Add contact \n 2. Edit contact \n 3. Delete contact \n 4. Display \n 5. Exit");
+            int option = sc.nextInt();
+            switch (option) {
+                case 1:
+                    addContact();
+                    System.out.println("Contact added successfully");
+                    break;
+                case 2:
+                    editContact();
+                    System.out.println("Contact edited successfully");
+                    break;
+                case 3:
+                    deleteContact();
+                    break;
+                case 4:
+                    displayContact();
+                    break;
+                case 5:
+                    check = true;
+                    break;
+                default:
+                    System.out.println("Please choose a valid option");
+                    break;
+            }
+        } while (!check);
+    }
 }

@@ -8,5 +8,6 @@ public class AddressBookSystem {
         addressBook.displayContact();
         addressBook.editContact();
         addressBook.deleteContact();
+        addressBook.getmenu();
     }
 }
