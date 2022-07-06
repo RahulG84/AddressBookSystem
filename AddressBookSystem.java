@@ -6,6 +6,7 @@ public class AddressBookSystem {
         AddressBook addressBook = new AddressBook();
         addressBook.addContact();
         addressBook.displayContact();
+        addressBook.editContact();
 
     }
 }
